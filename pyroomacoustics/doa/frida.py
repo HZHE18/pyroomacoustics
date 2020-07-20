@@ -69,7 +69,7 @@ class FRIDA(DOA):
                  stft_noise_floor=0., stft_noise_margin=1.5, signal_type='visibility',
                  use_lu=True, verbose=False, symb=True, use_cache=False, **kwargs):
 
-        DOA.__init__(self, L, fs, nfft, c=c, num_src=num_src, mode='far', **kwargs)
+        DOA.__init__(self, L, fs, nfft, c=c, num_src=num_src, **kwargs)
 
         # intialize some attributes
         self.visi_noisy_all = None
