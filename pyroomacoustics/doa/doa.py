@@ -271,7 +271,7 @@ class DOA(object):
         from .frida import FRIDA
 
         if not isinstance(self, FRIDA):
-            self.mode_vec = ModeVector(self.L, self.fs, self.nfft, self.c, self.grid)
+            self.mode_vec = ModeVector(self.L, self.fs, self.nfft, self.c, self.grid, mode=self.mode)
 
     def locate_sources(self, X, num_src=None, freq_range=[500.0, 4000.0],
                        freq_bins=None, freq_hz=None):
